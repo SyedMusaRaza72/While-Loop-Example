@@ -30,36 +30,4 @@ The goal is to demonstrate the use of **while loops**, **condition checking**, a
 
 ---
 
-## 🧾 Code Example
-
-```python
-# Predefined variables
-correct_username = ""
-correct_password = ""
-
-# Registration Process
-print("---User Registration---")
-
-while correct_username == "" or correct_password == "":
-    new_user = input("Enter a new username: ")
-    new_pass = input("Enter a new password: ")
-
-    if new_user != "" and new_pass != "":
-        correct_username = new_user
-        correct_password = new_pass
-        print("Congrats! Registration Successful")
-    else:
-        print("Username and password cannot be empty. Please try again.")
-
-# Login Phase Starts
-print("\n--- Login Phase Starts ---")
-
-while True:
-    login_user = input("Enter username: ")
-    login_pass = input("Enter password: ")
-
-    if login_user == correct_username and login_pass == correct_password:
-        print("Login Successfully!")
-        break
-    else:
-        print("Incorrect username or password. Try again!")
+##
